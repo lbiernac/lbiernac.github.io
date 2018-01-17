@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyWebsite</title>
+    <script src="processing.js"></script>
+  </head>
+  <body>
+
+  <h1>Hello, World!</h1>
+
+  <script type="text/processing">
+	void setup() {
+		size(500,500);
+		background(65, 158, 3);
+    // PUT CODE HERE
+	}
+	
+	void draw() {
+		//This gets run may times per second
+    // PUT CODE HERE
+	}
+  
+  
+  </script>
+  <canvas id="canvas1"></canvas>
+
+
+  </body>
+</html>
