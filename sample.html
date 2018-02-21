@@ -17,11 +17,13 @@
 	
 	var x = 20;
 	var y = 16;
-	var z = 75; 
+	var w = 20;
+	var h = 20; 
 	
 	void draw() {
 		//This gets run may times per second
-		ellipse(x, y, z);
+		ellipse(x, y, w, h);
+		
 	}
   
   	void keyPressed(){
@@ -39,6 +41,15 @@
 		   y = y - 1
 		}
 	    }
+	    if(key == 'o'){
+	    	w = w*2
+		h = h*2
+	    }
+	    if(key == 'y'){
+	    	w = w*0.5
+		h = h*0.5
+	    }
+	    
 	}
   
   </script>
