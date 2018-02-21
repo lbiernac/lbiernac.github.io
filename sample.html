@@ -11,16 +11,35 @@
 
   <script type="text/processing">
 	void setup() {
-		size(500,500);
+		size(100,100);
 		background(65, 158, 3);
-    		// PUT CODE HERE
 	}
+	
+	var x = 20;
+	var y = 16;
+	var z = 33; 
 	
 	void draw() {
 		//This gets run may times per second
-    		// PUT CODE HERE
+		ellipse(x, y, z);
 	}
   
+  	void keyPressed(){
+	   if(key == CODED){
+	        if (keyCode == LEFT){
+		   	x = x - 1
+		}
+		if (keyCode == RIGHT){
+		   x = x + 1
+		}
+		if (keyCode == UP){
+		   y = y + 1
+		}
+		if (keyCode == DOWN){
+		   y = y - 1
+		}
+	    }
+	}
   
   </script>
   <canvas id="canvas1"></canvas>
