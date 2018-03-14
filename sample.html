@@ -23,6 +23,11 @@
 	
 	void draw() {
 		//This gets run may times per second
+		// Display the current paint color in the corner using a rectangler
+		color paint_color = color(red, green, blue);
+		fill(paint_color);	// Set color
+		noStroke();
+		rect(20, 20, 20, 50);
 	}
   
   	void keyPressed(){
