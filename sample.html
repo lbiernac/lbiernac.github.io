@@ -11,13 +11,13 @@
 
   <script type="text/processing">
 	void setup() {
-		size(600,400);
+		size(screen.width - 10, screen.height - 50);
 		background(255, 255, 255);
 
 	}
 	var w = 20;
 	var h = 20; 
-	color paint_color = color(102, 102, 0);
+	color paint_color = color(0, 0, 0);
 	
 	void draw() {
 		//This gets run may times per second
@@ -33,6 +33,15 @@
 		if (keyCode == DOWN){
 		   	w = w*0.5
 			h = h*0.5
+		}
+		if (keyCode == SPACE){
+			// CHANGE THE COLOR!! 
+			if(paint_color == color(0, 0, 0){
+				paint_color = color(255, 0, 0);
+			}
+			else if(paint_color == color(255, 0, 0){
+				paint_color = color(0, 0, 0);
+			}
 		}
 	    }
 	    if(key == 'd'){
