@@ -17,7 +17,9 @@
 	}
 	var w = 20;
 	var h = 20; 
-	color paint_color = color(0, 0, 0);
+	var red = 0;
+	var green = 0;
+	var blue = 0;
 	
 	void draw() {
 		//This gets run may times per second
@@ -36,14 +38,14 @@
 		}
 		else if (keyCode == LEFT){
 			// CHANGE THE COLOR!! 
-			paint_color = color(255, 0, 0);
+			red = 255;
 		}
 		else if (keyCode == RIGHT){
-			if(paint_color == color(255, 0, 0){
-				paint_color = color(0, 255, 0);
+			if(red == 255{
+				red = 0;
 			}
 			else {
-				paint_color = color(0, 0, 0);
+				blue = 255;
 			}
 		}
 	    }
@@ -56,6 +58,7 @@
 	
 	void mouseDragged(){
 		// Draw a circle !! 
+		color paint_color = color(red, green, blue);
 		fill(paint_color);	// Set color
 		noStroke();
 		ellipse(mouseX, mouseY, w, h); // Draw in mouse location
