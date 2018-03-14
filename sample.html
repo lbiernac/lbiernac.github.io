@@ -7,7 +7,7 @@
   </head>
   <body>
 
-  <h1>Example Processing JS HTML</h1>
+  <h1>ProcessingJS Paint!</h1>
 
   <script type="text/processing">
 	void setup() {
@@ -37,6 +37,14 @@
 		else if (keyCode == LEFT){
 			// CHANGE THE COLOR!! 
 			paint_color = color(255, 0, 0);
+		}
+		else if (keyCode == RIGHT){
+			if(paint_color == color(255, 0, 0){
+				paint_color = color(0, 255, 0);
+			}
+			else {
+				paint_color = color(0, 0, 0);
+			}
 		}
 	    }
 	    if(key == 'd'){
