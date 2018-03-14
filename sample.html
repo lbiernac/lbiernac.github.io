@@ -11,46 +11,42 @@
 
   <script type="text/processing">
 	void setup() {
-		size(400,400);
+		size(600,400);
+		background(255, 255, 255);
+
 	}
-	
-	var x = 20;
-	var y = 16;
 	var w = 20;
 	var h = 20; 
+	color paint_color = color(102, 102, 0);
 	
 	void draw() {
 		//This gets run may times per second
-		background(65, 158, 3);
-
-		ellipse(x, y, w, h);
-		
 	}
   
   	void keyPressed(){
+	   // Make the shape bigger or smaller!! 
 	   if(key == CODED){
-	        if (keyCode == LEFT){
-		   	x = x - 3
-		}
-		if (keyCode == RIGHT){
-		   x = x + 3
-		}
 		if (keyCode == UP){
-		   y = y - 3
+			w = w*2
+			h = h*2
 		}
 		if (keyCode == DOWN){
-		   y = y + 3
+		   	w = w*0.5
+			h = h*0.5
 		}
 	    }
-	    if(key == 'o'){
-	    	w = w*2
-		h = h*2
+	    if(key == 'd'){
+	    	// Draw background to "erase"
+	    	background(255, 255, 255);
 	    }
-	    if(key == 'y'){
-	    	w = w*0.5
-		h = h*0.5
-	    }
-	    
+	}
+	
+	
+	void mouseDragged(){
+		// Draw a circle !! 
+		fill(paint_color);	// Set color
+		noStroke();
+		ellipse(mouseX, mouseY, w, h); // Draw in mouse location
 	}
   
   </script>
