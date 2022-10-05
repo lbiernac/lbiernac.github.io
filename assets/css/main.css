@@ -50,7 +50,7 @@ footer, header, hgroup, menu, nav, section {
 	*/
 
 	/* Menu colors */
-	--gradient-l-color: #e0ecd0; 			/*#2b8a8f; 		/*#ffc3a0; 			/*#00274c; 			/* 5E42A6 */
+	--gradient-l-color: #000000; 			/*#2b8a8f; 		/*#ffc3a0; 			/*#00274c; 			/* 5E42A6 */
 	--gradient-r-color: #c9ed95;			/*#534666; 		/*#fd746c; 			/*#1f80ff;			/* b74e91 */
 	--menu-color: #ffffff;				/*#f2f3f4;		/* #f2f3f4;			/*#eff0f1;			/* 312450 */
 	--selected-menu-font-color: #6b6764;  		/*#138086; 		/*#fd746c;			/*#1f80ff;			/* ffffff */
@@ -65,9 +65,9 @@ footer, header, hgroup, menu, nav, section {
 	--body-font-color: #404040;
 	--bold-font-color: #404040;
 	--misc-font-color: #404040;
-	--icon-color:      #404040; /* Not sure what icon colors do?? */
-	--hover-icon-color: #404040;
-	--selected-icon-color: #ffffff;
+	--icon-color:     #6f9490; /* #98af78; /* Not sure what icon colors do?? */ 
+	--hover-icon-color: #000;
+	--selected-icon-color: #98af78;
 
 	/* Background colors */
 	--sidebar-border-color: #f2ede3;
@@ -82,7 +82,7 @@ footer, header, hgroup, menu, nav, section {
 	--page-title-font-color: var(--gradient-r-color);
 	--page-menu-font-color-selected: var(--selected-menu-font-color);
 	--page-menu-font-color-unselected:  var(--menu-font-color);
-	--page-menu-font-color-hover: var(--hover-menu-font-color);
+	--page-menu-font-color-hover: #0f0;
 	--page-footer-color: var(--header-background-color);
 
 	/* Elements */
@@ -475,7 +475,12 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 3.75em; /*title LB font size! */
+		font-size: 3em; /*title LB font size! */
+		color:#000; 
+		font-family: crimson_text; 
+		font-weight: 700; 
+		font-style: normal; 
+		letter-spacing: 4pt; 
 	}
 
 		h1.major {
@@ -485,7 +490,8 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, var(--gradient-l-color), var(--gradient-r-color));
+				border: 1px solid #000;
+				/*background-image: -moz-linear-gradient(to right, var(--gradient-l-color), var(--gradient-r-color));
 				background-image: -webkit-linear-gradient(to right, var(--gradient-l-color), var(--gradient-r-color));
 				background-image: -ms-linear-gradient(to right, var(--gradient-l-color), var(--gradient-r-color));
 				background-image: linear-gradient(to right, var(--gradient-l-color), var(--gradient-r-color));
@@ -498,7 +504,7 @@ input, select, textarea {
 				content: '';
 				height: 0.05em;
 				position: absolute;
-				right: 0;
+				right: 0;*/
 				width: 100%;
 			}
 
@@ -508,6 +514,10 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.3em;
+		color:#000; 
+		font-family: crimson_text; 
+		font-weight: normal; 
+		font-style: italic;
 	}
 
 	h4 {
@@ -639,7 +649,7 @@ input, select, textarea {
 	}
 
 	hr.new3 { /*border above name*/
-  		border: 3px solid var(--news-table-border-color);
+  		border: 1px solid #6f9488;
 		margin: 0;
 		margin-top: 0em;
 	}
@@ -3214,7 +3224,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		padding-bottom: 0;
-		padding-top: 10pt;
+		padding-top: 5pt;
 		margin: 0;
 		line-height: 0;
 		font-size: 20pt;
@@ -3222,7 +3232,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.7em 0 0;
+			padding: 0 0.3em 0 0.3em;
 		}
 
 			ul.icons li:last-child {
@@ -3248,11 +3258,10 @@ input, select, textarea {
 				}
 		ul.icons li > a {
 			color: var(--icon-color);
-			opacity: 0.5;
+			opacity: 0.8;
 		}
 		ul.icons li > a:hover {
 			color: var(--hover-icon-color);
-			opacity: 0.2;
 		}
 
 
@@ -3862,8 +3871,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: var(--page-menu-color);
-		background-image: var(--page-menu-color);
+		background-color: transparant; /*var(--page-menu-color);
+		/* background-image: var(--page-menu-color); */
 		cursor: default;
 		padding: 1.5em 2em;
 	}
@@ -3882,6 +3891,10 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			text-align: right;
+			color:#000; 
+			font-family: crimson_text; 
+			font-weight: 700; 
+			font-style: italic; 
 		}
 
 			#header > nav > ul {
@@ -3902,20 +3915,25 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: var(--page-menu-font-color-unselected);
+						color:  var(--icon-color); 
 						display: inline-block;
-						font-size: 0.6em;
-						font-weight: bold;
+						font-size: 0.75em;
 						letter-spacing: 0.25em;
+						/* font-size: 0.6em;
+						letter-spacing: 0.25em; */
 						text-transform: uppercase;
 					}
 
 						#header > nav > ul > li a:hover {
-							color: var(--page-menu-font-color-hover);
+							color: #000; 
+							border-bottom: 1px solid #000;
 						}
 
 						#header > nav > ul > li a.active {
-							color: var(--page-menu-font-color-selected);
+							/*color: var(--icon-color);
+							border-bottom: 2px solid  #c0d8a1;*/
+							color: #000;
+							border-bottom: 1px solid  #000;
 						}
 
 		@media screen and (max-width: 736px) {
@@ -3929,7 +3947,11 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#header {
-				display: block;
+				color:#000; 
+				font-family: crimson_text; 
+				font-weight: 700; 
+				font-style: italic; 
+				letter-spacing: 4pt; 
 				padding: 0 2em;
 				text-align: left;
 			}
@@ -4485,6 +4507,11 @@ input, select, textarea {
 				#sidebar nav {
 					height: inherit;
 					line-height: inherit;
+					color:#000; 
+					font-family: crimson_text; 
+					font-weight: 700; 
+					font-style: italic; 
+					letter-spacing: 4pt; 
 				}
 
 					/* Mimic 3a */
@@ -4498,19 +4525,23 @@ input, select, textarea {
 						margin: 0;
 					}
 
-						#sidebar nav ul li {
-							display: block;
-							height: inherit;
-							line-height: inherit;
-							margin: 0 0 0 2em;
-							padding: 0;
-						}
+					#sidebar nav ul li {
+						height: inherit;
+						line-height: inherit;
+						margin: 0 0 0 2em;
+						padding: 0;
+					}
 
 
-					#sidebar nav a {
+					#sidebar nav ul li a {
 						height: inherit;
 						line-height: inherit;
 						padding: 0;
+						color:#000; 
+						font-family: crimson_text; 
+						font-weight: 700; 
+						font-style: italic; 
+						letter-spacing: 4pt; 
 					}
 
 						#sidebar nav a:after {
@@ -4534,7 +4565,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/test.png"); /*url("../../images/speach.jpg");/*url("images/intro.svg");*/
+		background-image: url("images/bg5.png"); /*url("../../images/speach.jpg");/*url("images/intro.svg");*/
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -4624,12 +4655,12 @@ input, select, textarea {
 		  width: 34px;
 		  height: 34px;
 		  margin-left: -12px;
-		  border-left: 5px solid #fff;
-		  border-bottom: 5px solid #fff;
+		  border-left: 5px solid #d2eab5;
+		  border-bottom: 5px solid #c0d8a1;
 		  -webkit-transform: rotate(-45deg);
 		  transform: rotate(-45deg);
-  -webkit-animation: sdb07 10s infinite;
-  animation: sdb07 10s infinite;
+  -webkit-animation: sdb07 20s infinite;
+  animation: sdb07 20s infinite;
   opacity: 1;
   box-sizing: border-box;
 }
