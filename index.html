@@ -125,8 +125,62 @@
 				<div class="column left">
 					<h6>Selected <br> Publications</h2>
 				</div>
+				<!-- SE Publicaton Card -->
+				<div class="column right">
+					<div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+						<div class="row" style="margin-bottom: 10px;">
+							<div class="column full-pub"
+								style="display: inline-block; vertical-align: middle; float: none;">
+								<h5 itemprop="name">Sequestered Encryption: A Hardware Technique for Comprehensive Data
+									Privacy</h5>
+								<div class="pub-authors" itemprop="author" style="margin-bottom: 0.8em;">
+									<b>Lauren&nbspBiernacki</b>, Meron&nbspZerihun&nbspDemissie,
+									Kidus&nbspBirkayehu&nbspWorkneh,
+									Fitsum&nbspAssamnew Andargie, Todd&nbspAustin
+								</div>
+							</div>
+						</div>
+						<div class="pub-authors" itemprop="author" style="margin-bottom: 0.8em;">
+							<p class="pub-abstract" itemprop="text"
+								style="padding-top: 1em; padding-bottom: 1em; border-top:1px solid var(--heading-font-color);  border-bottom:1px solid var(--heading-font-color); margin:0;">
+								<b>Abstract–</b>Data breaches that penetrate web-facing servers and exfiltrate sensitive
+								user data have become pervasive. Insulating these systems from attack is seemingly
+								impossible due to the ubiquity of software vulnerabilities within cloud applications. It
+								is simply insurmountable to adequately address all such vulnerabilities, and therefore
+								imprudent to rely on software applications to protect user data. Rather, the ideal
+								systems solution upholds data confidentiality, even in the presence of vulnerable or
+								compromised software. Homomorphic encryption (HE) provides these capabilities, but its
+								limited expressiveness and significant runtime overheads have inhibited its adoption. In
+								this work, we explore how trusted hardware can be leveraged to provide data
+								confidentiality in the presence of vulnerable software while achieving practical
+								performance overheads. We present Sequestered Encryption (SE)—a hardware technique for
+								data privacy that sequesters sensitive plaintext data into a small hardware root of
+								trust and encrypts this data in all external microarchitectural structures, thereby
+								rendering secret values inaccessible to software. With optimizations, SE achieves less than 2.5x
+								performance slowdowns on average compared to native execution, demonstrating that
+								architectural approaches can emerge as data privacy solutions that possess zero
+								trust in software while being dynamic, expressive, and performant. </p>
+						</div>
+						<div class="pub-authors" itemprop="author" style="margin-top: 1em; margin-bottom: 0.8em;">
+							<b>2022 IEEE International Symposium on Secure and Private Execution Environment Design</b>
+						</div>
+						<div class="pub-links" style="margin-top: 0;">
+							<a class="active button keyword-inv" href="https://ieeexplore.ieee.org/abstract/document/9935044"
+								target="_blank" rel="noopener"> Paper </a>
+							<!-- <a class="active button keyword-inv" href="./files/HOST2020_Paper09_Biernacki_Poster.pdf"
+								target="_blank" rel="noopener"> Poster </a>
+							<a class="active button keyword-inv" href="./files/HOST2020_Paper09_Biernacki_Slides.pdf"
+								target="_blank" rel="noopener"> Slides </a> -->
+							<!-- <a class="active button keyword-inv" href="" target="_blank" rel="noopener"> Talk </a> -->
+						</div>
 
-				<!-- DDASS Publicaton Card -->
+					</div>
+				</div>
+				<!-- Pub Card Spacer -->
+				<div class="column left">
+					<br>
+				</div>
+				<!-- DDAS Publicaton Card -->
 				<div class="column right">
 					<div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
 						<div class="row" style="margin-bottom: 10px;">
@@ -159,7 +213,8 @@
 								a security exception with a probability greater than 99.996%. Using hardware-based
 								address obfuscation, we provide significantly higher entropy at lower performance
 								overheads than previous software techniques, and our re-randomization mechanism offers
-								additional protections against possible pointer disclosures. </p>
+								additional protections against possible pointer disclosures.
+							</p>
 						</div>
 						<div class="pub-authors" itemprop="author" style="margin-top: 1em; margin-bottom: 0.8em;">
 							<b>2020 IEEE International Symposium on Hardware Oriented Security and Trust</b>
@@ -178,7 +233,7 @@
 				</div>
 				<!-- Pub Card Spacer -->
 				<div class="column left">
-				<br>
+					<br>
 				</div>
 				<!-- Morpheus Publicaton Card -->
 				<div class="column right">
@@ -190,7 +245,7 @@
 									Ensembles of Moving Target Defenses with Churn</h5>
 								<div class="pub-authors" itemprop="author" style="margin-bottom: 0.8em;">
 									Mark&nbspGallagher, <b>Lauren&nbspBiernacki</b>, Shibo&nbspChen,
-									Zelalem&nbspBirhanu&nbspAweke, Salessawi&nbspFerede&nbspYitbarek, 
+									Zelalem&nbspBirhanu&nbspAweke, Salessawi&nbspFerede&nbspYitbarek,
 									Misiker&nbspTadesse&nbspAga, Austin&nbspHarris, Zhixing&nbspXu,
 									Baris&nbspKasikci, Valeria&nbspBertacco, Sharad&nbspMalik, Mohit&nbspTiwari,
 									Todd&nbspAustin
@@ -213,9 +268,10 @@
 								system prior to an attack. To ensure attack probes fail, the architecture
 								incorporates churn to transparently re-randomize program values underneath the
 								running system. With frequent churn, systems quickly become impractically
-								difficult to penetrate. 
+								difficult to penetrate.
 								<br>
-								&nbsp&nbsp&nbsp&nbsp We demonstrate Morpheus through a RISC-V-based prototype designed to stop
+								&nbsp&nbsp&nbsp&nbsp We demonstrate Morpheus through a RISC-V-based prototype designed
+								to stop
 								control-flow attacks. Each moving target defense in Morpheus uses hardware
 								support to individually offer more randomness at a lower cost than previous
 								techniques. When ensembled with churn, Morpheus defenses offer strong protection
@@ -234,7 +290,8 @@
 						<div class="pub-links" style="margin-top: 0;">
 							<a class="active button keyword-inv" href="https://dl.acm.org/doi/10.1145/3297858.3304037"
 								target="_blank" rel="noopener"> Paper </a>
-							<a class="active button keyword-inv" href="https://www.youtube.com/watch?v=G04pYcp3p5o" target="_blank" rel="noopener"> Talk </a>
+							<a class="active button keyword-inv" href="https://www.youtube.com/watch?v=G04pYcp3p5o"
+								target="_blank" rel="noopener"> Talk </a>
 						</div>
 
 					</div>
