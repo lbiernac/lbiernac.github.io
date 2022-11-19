@@ -3712,11 +3712,13 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 5em 5em ;
+			/* padding: 5em 5em 5em 5em ; */
 			margin: 0 auto;
 			max-width: 1400px;
 			text-align: left;
 			width: 0 auto; /* LMB: Used to be 75, width of generic page */
+			padding: 7em; 
+			padding-top: 3em;
 		}
 
 			@media screen and (max-width: 1680px) {
@@ -3738,7 +3740,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 3em 2em 3em 2em ;
+					padding: 1em ;
 				}
 
 			}
