@@ -61,11 +61,11 @@ footer, header, hgroup, menu, nav, section {
 
 	/* Default font colors */
 	--heading-font-color:  #6b6764;
-	--title-page-font-color: #6b6764;
+	--title-page-font-color: #6d6d6d;
 	--body-font-color: #404040;
 	--bold-font-color: #404040;
 	--misc-font-color: #404040;
-	--icon-color:     #6f9490; /* #98af78; /* Not sure what icon colors do?? */ 
+	--icon-color:     #5e8580; /* #98af78; /* Not sure what icon colors do?? */ 
 	--hover-icon-color: #000;
 	--selected-icon-color: #98af78;
 
@@ -87,7 +87,7 @@ footer, header, hgroup, menu, nav, section {
 
 	/* Elements */
 	--keyword-button-background-color: rgba(255, 255, 255, 0.75);
-	--keyword-button-hover-background-color:  #c2d9a1;
+	--keyword-button-hover-background-color:  #CBDAD4;
 	--outline-button-font-color: #6b6764;
 	--outline-button-outline-color: #000;
 	--outline-button-hover-color: #fd746c;
@@ -103,7 +103,7 @@ footer, header, hgroup, menu, nav, section {
 	--news2-font-color: #6b6764;
 	--pub-card-border-color: #6b6764;
 	--pub-card-background-color: #ffffff;
-	--pub-abstract-font-color: #879770;
+	--pub-abstract-font-color: #6d6d6d;
 	--radio-box-color: #000000;
 	--form-field-background: rgba(255, 207, 179, 0.35);
 	--form-field-outline: rgba(255, 207, 179, 0.55);
@@ -239,19 +239,23 @@ input, select, textarea {
   text-align: left;
 }
 .pub-list-item .pub-authors {
-  font-size: 0.72em;
-  color: var(--heading-font-color);
-  letter-spacing: 0.05em;
-  font-weight: normal;
-  text-align: justify;
-  line-height: 1.25;
+	line-height: 1.25;
+	color: var(--pub-abstract-font-color);
+	text-align: justify;
+	font-size:0.75rem; 
+	font-family: noto_sans; 
+	font-weight: 400;
+	/* font-family: crimson_text; 
+	font-weight: normal; 
+	font-style: normal; */
 }
 .pub-list-item .pub-abstract {
   line-height: 1.15;
   color: var(--pub-abstract-font-color);
-  font-weight: normal;
   text-align: justify;
-  font-style: italic;
+  font-size:0.7rem; 
+  font-family: noto_sans; 
+  font-weight: 400;
 }
 .pub-list-item .pub-authors a {
  color:var(--title-page-font-color);
@@ -525,10 +529,12 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-family: Georgia serif;
-		color: var(--title-page-font-color);
-		font-size: 1.1em;
-                text-align: justify;
+		font-size: 1.1em; 
+		color:#000; 
+		font-family: crimson_text; 
+		font-weight: 700; 
+		font-style: normal; 
+        text-align: justify;
 		margin-bottom: 0.5em;
 		line-height: 1.25;
 		padding-bottom: 0;
@@ -2226,15 +2232,17 @@ input, select, textarea {
 	.button.keyword-inv {
 		border-color: var(--news-table-background-color) !important;
   		background-color: var(--news-table-background-color);
-  		color: var(--heading-text-color) !important;
 		border-radius: 3px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
-  		font-size: 0.72em;
-		color: var(--heading-font-color);
-		letter-spacing: 0.1em;
-		font-weight: normal;
+  		font-size: 0.75em;
+		font-family: crimson_text;
+		font-style: italic;
+		font-weight: 700;
+		text-transform: uppercase;
+		/* letter-spacing: 0.1em; */
+		color: var(--pub-abstract-font-color) !important;
   		margin-bottom: 10px;
 		margin-right: 10px;
 		padding: 0 1.5em 0 1.5em;
@@ -2246,7 +2254,7 @@ input, select, textarea {
 	.button.keyword-inv:hover {
  	 	border-color: #fff !important;
 		background-color:  var(--keyword-button-hover-background-color);
-		color: #fff !important;
+		color: #000 !important;
 		opacity: 1;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
@@ -4566,9 +4574,9 @@ input, select, textarea {
 	#intro {
 		background-attachment: fixed;
 		background-image: url("images/bg5.png"); /*url("../../images/speach.jpg");/*url("images/intro.svg");*/
-		background-position: top right;
+		background-position: top left;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: cover;
 	}
 
 		#intro p {
@@ -4639,7 +4647,7 @@ input, select, textarea {
 
 		#intro a.down:hover {
 		  opacity: .5;
- 		  border-color: var(--gradient-r-color) !important;
+ 		  /* border-color: #000 !important; */
 		}
 
 		#intro a.down:active, a.down:focus {
@@ -4655,12 +4663,12 @@ input, select, textarea {
 		  width: 34px;
 		  height: 34px;
 		  margin-left: -12px;
-		  border-left: 5px solid #d2eab5;
-		  border-bottom: 5px solid #c0d8a1;
+		  border-left: 1.5px solid #000;
+		  border-bottom: 1.5px solid #000;
 		  -webkit-transform: rotate(-45deg);
 		  transform: rotate(-45deg);
-  -webkit-animation: sdb07 20s infinite;
-  animation: sdb07 20s infinite;
+  -webkit-animation: sdb07 30s infinite;
+  animation: sdb07 30s infinite;
   opacity: 1;
   box-sizing: border-box;
 }
@@ -4668,11 +4676,11 @@ input, select, textarea {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-#intro a.down span:nth-of-type(2) {
+/* #intro a.down span:nth-of-type(2) {
   bottom: 36px;
   -webkit-animation-delay: .4s;
   animation-delay: .4s;
-}
+} */
 /*
 #intro a.down span:nth-of-type(3) {
   bottom: 20px;
