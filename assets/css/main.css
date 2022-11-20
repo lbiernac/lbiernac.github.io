@@ -95,14 +95,14 @@ footer, header, hgroup, menu, nav, section {
 	--filled-button-background-color: rgba(255, 255, 255, 0.5);
 	--filled-button-font-color: rgba(255, 207, 179, 1);
 	--table-heading-font-color: #000000;
-	--news-table-background-color: #f6f3ec;
+	--news-table-background-color: #efe8df;
 	--news-table-border-color: #879770;
 	--news-table-outline-color: #f2ede3;
 	--news-table-separator-color: #f2ede3;
 	--news1-font-color: #879770;
 	--news2-font-color: #6b6764;
 	--pub-card-border-color: #6b6764;
-	--pub-card-background-color: #ffffff;
+	--pub-card-background-color: #FAF5F1;
 	--pub-abstract-font-color: #6d6d6d;
 	--radio-box-color: #000000;
 	--form-field-background: rgba(255, 207, 179, 0.35);
@@ -242,7 +242,7 @@ input, select, textarea {
 	line-height: 1.25;
 	color: var(--pub-abstract-font-color);
 	text-align: justify;
-	font-size:0.75rem; 
+	font-size: 0.8em; 
 	font-family: noto_sans; 
 	font-weight: 400;
 	/* font-family: crimson_text; 
@@ -250,10 +250,10 @@ input, select, textarea {
 	font-style: normal; */
 }
 .pub-list-item .pub-abstract {
-  line-height: 1.15;
+  line-height: 1.4;
+  font-size: 0.92em; 
   color: var(--pub-abstract-font-color);
   text-align: justify;
-  font-size:0.7rem; 
   font-family: noto_sans; 
   font-weight: 400;
 }
@@ -529,7 +529,7 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 1.2em; 
+		font-size: 1.4em; 
 		color:#000; 
 		font-family: crimson_text; 
 		font-weight: 700; 
@@ -3717,7 +3717,7 @@ input, select, textarea {
 			max-width: 1400px;
 			text-align: left;
 			width: 0 auto; /* LMB: Used to be 75, width of generic page */
-			padding: 7em; 
+			padding: 5em; 
 			padding-top: 3em;
 		}
 
@@ -3905,6 +3905,9 @@ input, select, textarea {
 			font-family: crimson_text; 
 			font-weight: 700; 
 			font-style: italic; 
+			position: absolute;
+			top: 40px;
+			right: 40px;
 		}
 
 			#header > nav > ul {
